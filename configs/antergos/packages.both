@@ -12,7 +12,8 @@ hwinfo
 ntp
 os-prober
 parted
-prebootloader
+#prebootloader > efitools replace it
+efitools
 arch-install-scripts
 
 
