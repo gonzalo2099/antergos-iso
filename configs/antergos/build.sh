@@ -53,6 +53,8 @@ make_setup_mkinitcpio() {
     cp /usr/lib/initcpio/archiso_shutdown ${work_dir}/root-image/etc/initcpio
     cp -L ${script_path}/mkinitcpio.conf ${work_dir}/root-image/etc/mkinitcpio-archiso.conf
     cp -L ${script_path}/root-image/etc/os-release ${work_dir}/root-image/etc
+    cp -L ${script_path}/root-image/etc/hostname ${work_dir}/root-image/etc
+    cp -L ${script_path}/root-image/etc/lsb-release ${work_dir}/root-image/etc
     cp -L ${script_path}/plymouthd.conf ${work_dir}/root-image/etc/plymouth
     cp -L ${script_path}/plymouth.initcpio_hook ${work_dir}/root-image/etc/initcpio/hooks
     cp -L ${script_path}/plymouth.initcpio_install ${work_dir}/root-image/etc/initcpio/install
